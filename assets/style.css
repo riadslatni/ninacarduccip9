@@ -15,6 +15,8 @@ body {
     --bs-nav-pills-link-active-color: black ;
     --bs-nav-pills-link-active-bg: black ;}
 
+   
+
  .imgsize {
     width: 100%;
   }
@@ -298,8 +300,10 @@ input[type="submit"] {
 .nav-pills {
     --bs-nav-pills-border-radius: var(--bs-border-radius);
      --bs-nav-pills-link-active-color: black !important; 
-    --bs-nav-pills-link-active-bg: #0d6efd;
+    --bs-nav-pills-link-active-bg: #BEB45A !important;
 }
+
+.nav-link {color: black !important;}
 
 /* Responsive */
 
