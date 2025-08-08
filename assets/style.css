@@ -11,17 +11,30 @@ body {
 }
 
 .nav-pills {
-    --bs-nav-pills-border-radius: var(--bs-border-radius);
-    --bs-nav-pills-link-active-color: black ;
-    --bs-nav-pills-link-active-bg: black ;}
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: black;
+  --bs-nav-pills-link-active-bg: black;
+}
 
-   
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
 
- .imgsize {
-    width: 100%;
-  }
-  
-  footer {
+
+
+.imgsize {
+  width: 100%;
+}
+
+footer {
   background-color: #5f5826;
   color: white;
   width: 100%;
@@ -42,8 +55,8 @@ footer .footer_left {
   margin: 0;
   padding: 0;
 }
-   
-  footer .footer_right {
+
+footer .footer_right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,8 +127,9 @@ img.gallery-item.img-fluid {
   height: 100%;
 }
 
-.item-column.mb-4.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
-{margin-bottom: 0 !important;}
+.item-column.mb-4.col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4 {
+  margin-bottom: 0 !important;
+}
 
 .picture.left::before,
 .picture.right::before {
@@ -298,12 +312,14 @@ input[type="submit"] {
 }
 
 .nav-pills {
-    --bs-nav-pills-border-radius: var(--bs-border-radius);
-     --bs-nav-pills-link-active-color: black !important; 
-    --bs-nav-pills-link-active-bg: #BEB45A !important;
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: black !important;
+  --bs-nav-pills-link-active-bg: #BEB45A !important;
 }
 
-.nav-link {color: black !important;}
+.nav-link {
+  color: black !important;
+}
 
 /* Responsive */
 
@@ -346,6 +362,7 @@ input[type="submit"] {
     width: 100%;
     height: 100%;
   }
+
   .img-fluid {
     width: 100%;
     height: auto;
@@ -385,20 +402,22 @@ input[type="submit"] {
 }
 
 @media (max-width: 650px) {
-.container {
-    width: 96% !important;;
+  .container {
+    width: 96% !important;
+    ;
   }
 
-   .gallery-item {
+  .gallery-item {
     width: 100%;
     height: 100%;
   }
+
   .img-fluid {
     width: 100%;
     height: auto;
   }
 
-  
+
   .top-header {
     flex-direction: column;
     padding-inline: 0;
